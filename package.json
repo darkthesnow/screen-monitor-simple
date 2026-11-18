@@ -1,0 +1,28 @@
+{
+  "name": "screen-monitor-simple",
+  "version": "0.1.0",
+  "description": "简化版窗口监控截图工具:选择应用、可调频率、定时截取该应用全部窗口、截图预览",
+  "main": "out/main/index.js",
+  "author": "yy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/build-native.mjs",
+    "build:native": "node scripts/build-native.mjs",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.web.json --noEmit"
+  },
+  "dependencies": {
+    "vue": "^3.5.42"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "electron": "^44.0.0",
+    "electron-vite": "^5.0.0",
+    "typescript": "~5.9.0",
+    "vite": "^7.3.0"
+  }
+}
